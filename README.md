@@ -1,12 +1,12 @@
-## htmllint-async-loader
+## linthtml-async-loader
 
-Yet another [htmllint](https://github.com/htmllint/htmllint) loader. Tested with [webpack@3](https://github.com/webpack/webpack).
+Yet another [linthtml](https://github.com/linthtml/linthtml) loader. Tested with [webpack@3](https://github.com/webpack/webpack).
 
-- Like [robbiedigital/htmllint-loader](https://github.com/robbiedigital/htmllint-loader) but without [deasync](https://github.com/abbr/deasync) usage.
-- Like [GideonPARANOID/htmllint-loader](https://github.com/GideonPARANOID/htmllint-loader) but with better output formatting.
+- Like [robbiedigital/linthtml-loader](https://github.com/robbiedigital/linthtml-loader) but without [deasync](https://github.com/abbr/deasync) usage.
+- Like [GideonPARANOID/linthtml-loader](https://github.com/GideonPARANOID/linthtml-loader) but with better output formatting.
 
 ```
-yarn -D htmllint-async-loader
+yarn -D linthtml-async-loader
 ```
 
 ```javascript
@@ -15,9 +15,9 @@ module.exports = {
     rules: [{
       test: /\.(html|ejs)$/),
       enforce: 'pre',
-      loader: 'htmllint-async-loader',
+      loader: 'linthtml-async-loader',
       options: {
-        config: '.htmllintrc',
+        config: '.linthtmlrc',
         failOnProblem: false
       }
     }]
