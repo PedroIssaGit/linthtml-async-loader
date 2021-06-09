@@ -1,24 +1,24 @@
 {
-  "name": "htmllint-async-loader",
-  "version": "5.0.3",
-  "description": "simple htmlint loader",
+  "name": "linthtml-async-loader",
+  "version": "1.0.0",
+  "description": "simple linthtml loader",
   "main": "index.js",
-  "repository": "https://github.com/nskazki/htmllint-async-loader",
-  "author": "Nikita Skazki <nskazki@gmail.com>",
+  "repository": "https://github.com/nskazki/linthtml-async-loader",
+  "author": "Pedro Issa",
   "license": "MIT",
   "keywords": [
     "async",
     "loader",
     "webpack",
     "webpack-loader",
-    "htmllint",
-    "htmllint-loader"
+    "linthtml",
+    "linthtml-loader"
   ],
   "scripts": {
     "test": "eslint ."
   },
   "peerDependencies": {
-    "htmllint": "^0.7.0"
+    "@linthtml/linthtml": "^0.7.2"
   },
   "dependencies": {
     "chalk": "^4.1.0",
