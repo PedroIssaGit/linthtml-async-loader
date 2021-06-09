@@ -102,7 +102,7 @@ function linthtmlLoader(source) {
       webpack.addDependency(result.filepath);
       linthtml.use(result.config.plugins || []);
       delete result.config.plugins;
-      return linthtml(source, result.config);
+      return linthtml(source, result.config.plugins || []);
     })
     .then((issues) => {
       if (issues.length !== 0) {
